@@ -1,0 +1,13 @@
+Decision Process
+
+It depends. Hadoop can process all kinds of data. But sometimes it's not necessary to use Hadoop. For this particular case, we need to understand the data from volume, variety, and velocity to make the decision. If the volume is large and formats vary, we need Hadoop. Also, if people are generating data fast, we need Hadoop's capacity to process it fast. 
+
+
+Search Functionality
+
+We can enhance the search functionality by creating index first and have the user set how many results she wants. Then we only show top N results. The ranking can be done according to the number of keywords matched or the distance between keywords and a page (count, mean, etc.). 
+
+
+Other Questions
+
+Since we can do count, mean and ranking, more statistics can be derived from the dataset by using mapreduce. Besides, we can answer questions like 'how to clustering nodes content' or 'how to define the sentiment of the content' by applying machine learning and text mining techniques. 
