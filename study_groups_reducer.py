@@ -9,7 +9,6 @@ writer = csv.writer(sys.stdout, delimiter='\t', quotechar='"', quoting=csv.QUOTE
 #The master dict of nodes
 d = {}
 
-
 for line in reader:
     #Save the node
     if line[2] == 'question':
@@ -29,4 +28,4 @@ for line in reader:
 
 #print out
 for i in d:
-    writer.writerow([i,d[i]])
+    writer.writerow([i, d[i]])

@@ -16,13 +16,12 @@ d = {}
 for line in reader:
     if len(line) != 19:
         continue
-    
+
     #Get a list of tags from a node
     tags = filter(None, line[2].split(' '))
-    
+
     #Save counts
     for t in tags:
-        
         if t in d:
             d[t] += 1
         else:
@@ -30,11 +29,7 @@ for line in reader:
 
 #Get mapper's top 10
 #Format: [('python', 59), ('unit2': 33)]
-top_ten = sorted(d.iteritems(),key=operator.itemgetter(1),reverse=True)[:10]
+top_ten = sorted(d.iteritems(), key=operator.itemgetter(1), reverse=True)[:10]
 
 #print out
 writer.writerow(top_ten)
-
-    
-    
-
